@@ -7,11 +7,12 @@ const morgan = require('morgan');
 const { PORT, DATABASE_URL } = require('./config');
 
 const app = express();
+app.use(morgan('common'));
 
 const postsRouter = require('./postsRouter');
 
-app.use('./posts', postsRouter);
-app.use(morgan('common'));
+app.use('/posts', postsRouter);
+
 
 let server,
 
