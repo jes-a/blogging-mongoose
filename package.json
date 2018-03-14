@@ -5,7 +5,7 @@
   "repository": "https://github.com/jes-a/blogging-mongoose",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node server.js"
   },
   "author": "Jes",
   "license": "ISC",
