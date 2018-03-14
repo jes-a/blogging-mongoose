@@ -14,7 +14,7 @@ const postsRouter = require('./postsRouter');
 app.use('/posts', postsRouter);
 
 
-let server,
+let server;
 
 function runServer(databaseUrl, port = PORT) {
 
